@@ -51,7 +51,7 @@ GROUP BY location
 ORDER BY TotalDeathCount DESC
 
 
---GLOBAL NUMBERS - new cases per deaths per day line 54
+--GLOBAL NUMBERS - new cases per deaths per day
 SELECT date, SUM(new_cases) AS Cases, SUM(CAST(new_deaths AS INT)) AS Deaths, 
 		CASE
 			WHEN SUM(new_cases) = 0 THEN 0
